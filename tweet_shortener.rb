@@ -8,8 +8,9 @@ def word_substituter(tweet)
     be: "b",
     you: "u",
     at: "@",
+    and: "&"
   }
-and: "&"
+
   
   tweet.split(" ").each do |t|
     if t.any?dictionary.key
