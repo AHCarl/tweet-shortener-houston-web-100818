@@ -10,6 +10,6 @@ def word_substituter(tweet)
     at: "@",
     and: "&"
   }
-  tweet.split(" ").map{ |t| dictionary.key?(t.downcase.to_sym)? dictionary[w.downcase.to_sym] : 
+  tweet.split(" ").map{ |t| dictionary.key?(t.downcase.to_sym)? dictionary[t.downcase.to_sym] : 
   t}.join(" ")
 end
