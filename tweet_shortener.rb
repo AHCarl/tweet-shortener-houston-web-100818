@@ -5,5 +5,5 @@ def word_substituter(tweet)
   tweet.split(" ")
   output = []
   tweet.each do |word|
-    if word == dictionary.key
+    if word.any?dictionary.key
 end
