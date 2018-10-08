@@ -2,7 +2,7 @@ dictionary = {"hello" => 'hi', "to, two, too" => '2', "for, four" => '4', "be" =
   "at" => '@', "and" => '&'}
   
 def word_substituter(tweet)
-  tweet.to_a.each do |t|
+  tweet.split(" ").each do |t|
          t.gsub!(/ two | too | to /, " 2 ")
          t.gsub!(/four| for /, " 4 ")
          t.gsub!(" be ", " b ")
