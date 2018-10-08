@@ -4,6 +4,8 @@ def dictionary
 end 
 
 def word_substituter(tweet)
+  
+  
   tweet.split(" ").each do |t|
     dictionary.keys
   end
