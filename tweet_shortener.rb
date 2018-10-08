@@ -2,13 +2,13 @@ dictionary = {"hello" => 'hi', "to, two, too" => '2', "for, four" => '4', "be" =
   "at" => '@', "and" => '&'}
   
 def word_substituter(tweet)
-  tweets.each do |tweet|
+  tweet.to_a.each do |t|
     if tweet.length > 140
-         tweet.gsub!(/ two | too | to /, " 2 ")
-         tweet.gsub!(/four| for /, " 4 ")
-         tweet.gsub!(" be ", " b ")
-         tweet.gsub!(" you ", " u ")
-         tweet.gsub!(" and ", " & ")
+         t.gsub!(/ two | too | to /, " 2 ")
+         t.gsub!(/four| for /, " 4 ")
+         t.gsub!(" be ", " b ")
+         t.gsub!(" you ", " u ")
+         t.gsub!(" and ", " & ")
     end
   end
 end
