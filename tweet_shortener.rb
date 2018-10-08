@@ -7,6 +7,6 @@ def word_substituter(tweet)
   
   
   tweet.split(" ").each do |t|
-    dictionary.keys
+    if t.any?dictionary.keys
   end
 end
