@@ -10,3 +10,5 @@ def word_substituter(tweet)
          tweet.gsub!(" you ", " u ")
          tweet.gsub!(" and ", " & ")
     end
+  end
+end
