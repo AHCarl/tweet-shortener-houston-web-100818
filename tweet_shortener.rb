@@ -5,7 +5,7 @@ def word_substituter(tweet)
   current_word = ""
   shortened_tweet = ""
   
-  str.each_char do |char|
+  tweet.each_char do |char|
     shortened_word = (dictionary[current_word] || current_word)
     shortened_tweet += shortened_word + char 
     current_word = ""
