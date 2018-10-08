@@ -2,5 +2,6 @@ dictionary = {"hello" => 'hi', "to, two, too" => '2', "for, four" => '4', "be" =
   "at" => '@', "and" => '&'}
   
 def word_substituter(tweet)
-  tweet.gsub!
+  tweet.split(" ")
+  output = []
 end
