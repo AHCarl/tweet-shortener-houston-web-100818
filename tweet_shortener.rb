@@ -1,7 +1,7 @@
 dictionary = {"hello" => 'hi', "to, two, too" => '2', "for, four" => '4', "be" => 'b', "you" => 'u',
   "at" => '@', "and" => '&'}
   
-def word_substituter(tweets)
+def word_substituter(tweet, dictionary)
   tweets.split(" ").each do |tweet|
     if tweet.any
 end
